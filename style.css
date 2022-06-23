@@ -5,7 +5,7 @@
 }
 
 :root {
-  --principal-color: #2222fe;
+  --principal-color: rgb(130, 87, 229);
   --body-color: rgb(17, 17, 17);
   --secury-color: rgb(26, 26, 26);
   --button-disable: rgb(160, 160, 160);
@@ -84,7 +84,7 @@ header {
 }
 
 p.paragraph {
-  color: #000;
+  color: var(--body-color);
   font-size: 2rem;
   font-weight: 800;
 }
@@ -114,13 +114,13 @@ p.paragraph {
     transform: translateY(5px);
   }
   50% {
-    transform: translateY(70px);
+    transform: translateY(80px);
   }
 }
 
 .container {
   color: var(--text-color);
-  margin: 5rem;
+  margin: 4rem;
 }
 
 .container h2 {
@@ -163,6 +163,7 @@ p.paragraph {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 500;
   background: var(--principal-color);
@@ -186,7 +187,6 @@ p.paragraph {
 }
 
 section.inscricao {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +209,7 @@ section.inscricao {
   font-size: 1.7rem;
 }
 
-.form h1 {
+.form h2 {
   font-size: 4rem;
   margin-bottom: 20px;
   color: var(--principal-color);
@@ -323,6 +323,7 @@ section.area {
   .banner {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .bannerBox {
@@ -336,15 +337,16 @@ section.area {
     line-height: 5rem;
   }
   .button {
-    width: 100%;
+    width: 90%;
   }
 
   .img img {
-    height: 450px;
+    height: 45rem;
   }
 
   .form {
-    min-height: 900vh;
+    min-height: 100vh;
+    padding: 3rem;
   }
 
   .box {
@@ -369,5 +371,57 @@ section.area {
     height: 1rem;
     align-items: center;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  main {
+    width: 100vw;
+  }
+
+  .bannerBox {
+    width: 70%;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .bannerBox h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .bannerBox p {
+    font-size: 2em;
+    line-height: 2.5rem;
+  }
+  .img img {
+    margin: 0 auto;
+    height: 30rem;
+  }
+  .container{
+    margin: 1rem;
+  }
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    font-size: 1.5rem;
+    height: 30%;
+    width: 90%;
+  }
+
+  .notebok {
+    margin: 0 auto;
+    height: 30rem;
+  }
+
+  .form h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 }

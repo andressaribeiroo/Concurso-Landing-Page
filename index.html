@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concurso Monte uma landing Page de Sucesso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="parcerias">
+        <a href="https://www.rocketseat.com.br/" target="_blank"> <img class="img1 filterShadow" src="img/rocketseat.png" alt="" srcset=""></a>
+       
+        <a href="https://www.instagram.com/conecta_elas/" target="_blank"><img class="img1 filterShadow" src="img/conecta.png" alt="" srcset=""></a>
+        </div>
+     
+    </header>
+
+     <main>
+
+      <section class="banner">
+        <div class="bannerBox">
+          <h1>Concurso Monte uma Landing Page de Sucesso.</h1>
+          <p>
+            Chegou a hora de concorrer a 5 bolsas de estudo
+            <strong>100% gratis</strong> das trilha da Rocketseat. 
+          </p>
+          <p class="paragraph">Uma parceria da Conecta-elas + Rocketseat</p>  
+          <a href="#form"><button class="button">Inscreva-se</button></a>
+          
+        </div>
+        <div class="img">
+          <img class="filterShadow" src="img/character.png" alt="Boneco 3D flutuando" />
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Como Participar do Concurso ?</h2>
+        <div class="cards">
+          
+          <div class="card">
+            <div class="icon">1</div>
+            <h3>Habilidades necessárias:</h3>
+            <br>
+            
+            <p>Após realizar a inscrição:
+              Conhecimento em html. Conhecimento em css. Conhecimento em
+              JavaScript e ser mulher.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">2</div>
+            <h3>Requisitos para a landing page:</h3>
+            <br>
+            <p>
+              Estar no formato de landing page (página estática) e seguir o
+              objetivo da landing page que é resolver o desafio proposto: a
+              criação da página e a captura de leads Ter acessibilidade
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">3</div>
+            <h3>O que será avaliado</h3>
+            <br>
+            <p>
+              Organização do Código,seu conhecimento em HTML, CSS e Javascript e a
+              estruturação da landing page. Além do objetivo cumprido com criatividade
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="inscricao">
+        <img class="filterShadow" src="img/Other.svg" alt="ilustração 3D de um notebook"/>
+        <form action="#" method="get" id="form" class="form">
+          <h1>Formulário de Inscrição</h1>
+          <section class="sectionForm">
+            <div class="box">
+             <div class="boxInput" id="input-names">
+              <input
+              required
+              id="txtnome"
+              class="input"
+              type="text"
+              placeholder="Nome"
+              minlength="3"
+              maxlength="20"
+              onkeyup = "validateName();"
+            />
+            <span class="indicator"></span>
+             </div>
+            <div class="boxInput" id="input-sobrenome">
+                <input
+                required
+                id="txtsobrenome"
+                class="input"
+                type="text"
+                placeholder="Sobrenome"
+                onkeyup = "validateSobrenome();"
+              />
+              <span class="indicator"></span>
+              </div>
+            </div>
+
+            <div class="box">
+             <div class="boxInput" id="teste">
+              <input
+              required
+              id="email"
+              class="email"
+              type="text"
+              placeholder="Email"
+              onkeyup = "validateEmail();"/>
+            <span class="indicator"></span>
+             </div>
+             <div class="boxInput" id="inpuTel">
+              <input type="tel" id="phone" name="phone" placeholder="Whatzapp" minlength="9"
+              maxlength="12" onkeyup = "validateTel();">
+              <span class="indicator"></span>
+            </div>
+             </div>
+          </section>
+          <section class="radio-select">
+            <div class="radio">
+              <label id="label-family">Qual lado da aplicação você desenvolve?</label>
+              <div>
+                <input type="radio" name="family" value="Frontend" id="front" checked/>
+                <label for="front">Frontend</label>
+              </div>
+              <div>
+                <input type="radio" name="family" value="Backend" id="back" />
+                <label for="back">Backend</label>
+              </div>
+              <div>
+                <input type="radio" name="family" value="FullStack" id="full" />
+                <label for="full">FullStack</label>
+              </div>
+            </div>
+            </div>
+
+            <div class="campo">
+              <label for="senioridade" id="label-select">Qual seu nível de conhecimento:</label>
+              <select id="senioridade" name="nivel" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="Iniciante" value="iniciante" >Iniciante</option>
+                <option value="junior" value="junior" >Júnior</option>
+                <option value="Pleno" value="pleno" >Pleno</option>
+                <option value="senior" value="senior" >Sênior</option>
+              </select>
+          </div>
+          </section>
+
+          <section class="area">
+            <label class="textarea" for="textarea">Nos diga porque você merece ganhar o concurso:</label>
+           <div class="boxInput id="inputArea">
+            <textarea
+            name="comentario"
+            id="textarea"
+            maxlength="500"
+            cols="30"
+            rows="10"
+            onkeyup = "validateArea();"
+          ></textarea>
+          <span class="indicator"></span>
+           </div>
+            <p id="counter">500</p>
+
+            <div>
+              <input required type="checkbox" name="" id="agreement" />
+              <label for="agreement" id="label-infos"
+                >"Você concorda com o uso das informações acima?"</label>
+              
+            </div>
+          </section>
+          <button type="submit" id="submit-btn" disabled>Enviar Inscrição</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="footer">Design & Developed By Andressa Ribeiro</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

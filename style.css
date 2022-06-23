@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --principal-color: #2222fe;
+  --body-color: rgb(17, 17, 17);
+  --secury-color: rgb(26, 26, 26);
+  --button-disable: rgb(160, 160, 160);
+  --text-color: white;
+  --img-shadow: rgb(0, 0, 0);
+  --valid-color: #0f0;
+  --invalid-color: #f00;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--principal-color);
+  border-radius: 2rem;
+  border: 5px solid var(--body-color);
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--principal-color);
+}
+
+.parcerias {
+  margin: 1.5rem;
+}
+
+.img1 {
+  border-radius: 50%;
+  height: 5rem;
+  margin-right: 1.5rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: var(--principal-color);
+}
+
+.bannerBox {
+  width: 40%;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+
+.bannerBox h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  color: var(--text-color);
+  padding-bottom: 2rem;
+  text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.593);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bannerBox p {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: var(--text-color);
+}
+
+p.paragraph {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.button {
+  margin: 2rem 0;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  width: 50%;
+  font-size: 1.7rem;
+}
+
+.button:hover {
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+.img img {
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+}
+
+.container {
+  color: var(--text-color);
+  margin: 5rem;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 5rem;
+  color: var(--principal-color);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 1.5rem;
+  width: 30rem;
+  height: 30rem;
+  background: var(--body-color);
+  box-shadow: 20px 20px 30px rgb(8, 8, 8), -20px -20px 30px rgb(26, 26, 26);
+  overflow: hidden;
+}
+
+.card .icon {
+  width: 8rem;
+  height: 8rem;
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 500;
+  background: var(--principal-color);
+  transition: 1s;
+}
+
+.container .card:hover .icon {
+  box-shadow: 0 0 0 350px var(--principal-color);
+}
+
+.container .card::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+section.inscricao {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--secury-color);
+}
+
+.filterShadow {
+  filter: drop-shadow(0.45em 0.45em 0.5em var(--img-shadow));
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60rem;
+  gap: 1rem;
+  padding: 4rem 7rem;
+  margin: 2rem;
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+.form h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: var(--principal-color);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.box input,
+select,
+#textarea {
+  flex-grow: 1;
+  border: 1px solid var(--principal-color);
+  padding: 0.5rem;
+  padding-right: 5rem;
+  background: #292929;
+  color: var(--text-color);
+  border: none;
+}
+
+.campo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#label-family,
+#label-select,
+.textarea {
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+section.area {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  width: 100%;
+  resize: none;
+}
+
+#counter {
+  align-self: flex-end;
+}
+
+#submit-btn {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--principal-color);
+  color: var(--text-color);
+  font-size: 1.7rem;
+  border: none;
+}
+
+#submit-btn:disabled {
+  background-color: var(--button-disable);
+  cursor: not-allowed;
+}
+.boxInput {
+  position: relative;
+}
+.indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: rgb(85, 85, 85);
+  border-radius: 50%;
+}
+
+.valid .indicator {
+  background: var(--valid-color);
+  box-shadow: 0 0 5px var(--valid-color), 0 0 10px var(--valid-color),
+    0 0 20px var(--valid-color), 0 0 40px var(--valid-color);
+}
+
+.invalid .indicator {
+  background: var(--invalid-color);
+  box-shadow: 0 0 5px var(--invalid-color), 0 0 10px var(--invalid-color),
+    0 0 20px var(--invalid-color), 0 0 40px var(--invalid-color);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  bottom: 0;
+  background: var(--principal-color);
+  padding: 2rem 10rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 740px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerBox {
+    width: 70%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .bannerBox h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .button {
+    width: 100%;
+  }
+
+  .img img {
+    height: 450px;
+  }
+
+  .form {
+    min-height: 900vh;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .box input {
+    width: 100%;
+  }
+
+  .campo {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .footer {
+    position: fixed;
+    height: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}

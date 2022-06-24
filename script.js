@@ -9,7 +9,7 @@ const inputsSobrenome = document.getElementById("input-sobrenome");
 const telefone = document.getElementById("inpuTel");
 const inputArea = document.getElementById("inputArea");
 const form = document.getElementById("form");
-const mensagem = document.getElementById("mensagem")
+const mensagem = document.getElementById("mensagem");
 
 function validateName() {
   let nome = document.getElementById("txtnome").value;
@@ -86,23 +86,21 @@ function validateArea() {
 
 const formAvaliation = (e) => {
   e.preventDefault();
-  mensagem.style.display = 'flex';
-  form.style.display = 'none';
-
-}
-submitBtn.addEventListener('click', formAvaliation);
+  mensagem.style.display = "flex";
+  form.style.display = "none";
+};
 
 function submit() {
   submitBtn.disabled = !agreement.checked;
 }
 
 window.onload = function check() {
-  mensagem.style.display = 'none';
-   agreement.addEventListener("change", submit);
+  mensagem.style.display = "none";
+  agreement.addEventListener("change", submit);
 };
-
-
 
 textarea.addEventListener("input", () => {
   contador.innerHTML = 500 - textarea.value.length;
 });
+
+form.addEventListener("submit", formAvaliation);

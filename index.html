@@ -30,7 +30,7 @@
           <h1>Concurso Monte uma Landing Page de Sucesso.</h1>
           <p>
             Chegou a hora de concorrer a 5 bolsas de estudo
-            <strong>100% gratis</strong> das trilha da Rocketseat. 
+            <strong>100% gratis</strong> das trilhas da Rocketseat. 
           </p>
           <p class="paragraph">Uma parceria da Conecta-elas + Rocketseat</p>  
           <a href="#form"><button class="button">Inscreva-se</button></a>
@@ -42,7 +42,7 @@
       </section>
 
       <section class="container">
-        <h2>Como Participar do Concurso ?</h2>
+        <h2>Como Participar do Concurso: </h2>
         <div class="cards">
           
           <div class="card">
@@ -60,8 +60,8 @@
             <h3>Requisitos para a landing page:</h3>
             <br>
             <p>
-              Estar no formato de landing page (página estática) e seguir o
-              objetivo da landing page que é resolver o desafio proposto: a
+              Estar no formato de landing page e seguir o
+              objetivo que é resolver o desafio proposto: a
               criação da página e a captura de leads Ter acessibilidade
             </p>
           </div>
@@ -87,6 +87,7 @@
               <input
               required
               id="txtnome"
+              name="name"
               class="input"
               type="text"
               placeholder="Nome"
@@ -100,6 +101,7 @@
                 <input
                 required
                 id="txtsobrenome"
+                name="latsname"
                 class="input"
                 type="text"
                 placeholder="Sobrenome"
@@ -114,14 +116,16 @@
               <input
               required
               id="email"
+              name="email"
               class="email"
               type="text"
+              pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$"
               placeholder="Email"
               onkeyup = "validateEmail();"/>
             <span class="indicator"></span>
              </div>
              <div class="boxInput" id="inpuTel">
-              <input type="tel" id="phone" name="phone" placeholder="Whatzapp" minlength="9"
+              <input required type="tel" id="phone" name="phone" placeholder="Whatzapp" minlength="9"
               maxlength="12" onkeyup = "validateTel();">
               <span class="indicator"></span>
             </div>
@@ -173,7 +177,7 @@
             <p id="counter">500</p>
 
             <div>
-              <input required type="checkbox" name="" id="agreement" />
+              <input required type="checkbox" name="aceite" id="agreement" />
               <label for="agreement" id="label-infos"
                 >"Você concorda com o uso das informações acima?"</label>
               
@@ -181,9 +185,11 @@
           </section>
           <button type="submit" id="submit-btn" disabled>Enviar Inscrição</button>
         </form>
+        <div id="mensagem"><h1>Obrigado, Inscrição Realizada Com Sucesso !</h1></div>
       </section>
-
-    </main>
+      
+      
+   </main>
 
     <footer>
       <p class="footer">Design & Developed By Andressa Ribeiro</p>

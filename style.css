@@ -305,6 +305,14 @@ section.area {
     0 0 20px var(--invalid-color), 0 0 40px var(--invalid-color);
 }
 
+#mensagem {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: var(--principal-color);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -366,6 +374,10 @@ section.area {
     width: 100%;
   }
 
+  #mensagem {
+    padding: 5rem;
+  }
+
   .footer {
     position: fixed;
     height: 1rem;
@@ -420,8 +432,13 @@ section.area {
     font-size: 3rem;
     text-align: center;
   }
+  #mensagem {
+   text-align: center;
+    padding: 4rem;
+  }
 
   .footer {
     font-size: 1rem;
   }
 }
+

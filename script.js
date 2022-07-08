@@ -72,7 +72,7 @@ function validateTel() {
 
 function validateArea() {
   let area = textarea.value;
-  let padrao = /[^a-zà-ú]/gi;
+  let padrao = /[^a-zà-ú' ']/gi;
   let valida_area = area.match(padrao);
 
   if (valida_area || !area) {

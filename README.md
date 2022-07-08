@@ -6,7 +6,7 @@ O objetivo deste projeto foi Desenvolver uma landing page para divulgar o concur
 Os principais requisitos para participar desse projeto foram organização do Código, seu conhecimento em HTML, CSS e Javascript e a estruturação da landing page. 
 Além do objetivo cumprido com criatividade e a criação de um formulário com validação dos dados.
   
-## Demonstração
+## Preview
 
  <a href="https://andressaribeiroo.github.io/Concurso-Landing-Page/"><img width="78%" src="./img/landingPage.png" alt="Project-preview" /></a>
 
